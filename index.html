@@ -275,7 +275,7 @@ for(let i=0;i<3;i++){const x=W/2-12+i*9;if(baby.on){const c=i<baby.hp?'#d9402e':
 T('Oleada '+wave+'/10'+(dn>.5?' · Noche':' · Día'),W/2,28,1,'#fff0d0');hudB();
 if(banner>0){X.globalAlpha=Math.min(1,banner);T('Oleada '+wave,144,52,2,'#ffcf5a');if(wave%5==0)T(wave>=10?'¡JEFE FINAL!':'¡T-REX!',144,68,2,'#ff7a5a');X.globalAlpha=1}}
 if(st=='over'){X.fillStyle='rgba(20,8,6,.55)';X.fillRect(-MM,-MV,W+2*MM,H+2*MV);
-T(why=='baby'?'¡NIDO VACÍO!':'¡OMELETTE!',144,48,3,'#ffcf5a');T(why=='baby'?'Tu cría no sobrevivió':'El huevo se rompió',144,62,1,'#ffe3a0');T('PUNTOS '+score,144,80,2,'#fff0d0');
+T(why=='baby'?'¡NIDO VACÍO!':'¡OMELETTE!',144,48,3,'#ffcf5a');T(why=='baby'?'Tu cría no sobrevivió..':'El huevo se rompió',144,62,1,'#ffe3a0');T('PUNTOS '+score,144,80,2,'#fff0d0');
 T(score>0&&score>=best?'¡RÉCORD!':'RÉCORD '+best,144,94,1,'#ffe3a0');
 if(Date.now()%1000<650)T('Toca para reintentar',144,146,2,'#ffcf5a')}
 if(st=='win'){X.fillStyle='rgba(8,20,10,.6)';X.fillRect(-MM,-MV,W+2*MM,H+2*MV);
